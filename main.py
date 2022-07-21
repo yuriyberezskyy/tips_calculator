@@ -13,5 +13,6 @@ people = int(input("How many people to split the bill? "))
 
 total_without_tips = round(bill/people,2)
 total_with_tips = round(((bill/people)*(1+(percentage/100))),2)
+final_total = "{:.2f}".format(total_with_tips)
 
-print(f"Each person should pay: ${total_with_tips}")
+print(f"Each person should pay: ${final_total}")
